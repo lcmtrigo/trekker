@@ -245,6 +245,7 @@
 // $button-margin: 0 $global-padding $global-padding 0;
 // $button-style: solid;
 // $button-background: $primary-color;
+// $button-background-hover: scale-color($button-background, $lightness: -15%);
 // $button-color: auto;
 // $button-radius: 0;
 // $button-sizes: (
@@ -357,9 +358,11 @@
 // $input-background: #fff;
 // $input-background-hover: $input-background;
 // $input-background-focus: $input-background;
+// $input-background-disabled: smartscale($input-background);
 // $input-border: 1px solid #ccc;
 // $input-border-hover: 1px solid #bbb;
 // $input-border-focus: 1px solid #999;
+// $input-cursor-disabled: not-allowed;
 
 // Select menus
 // $select-color: #000;
@@ -415,12 +418,7 @@
 // $badge-fontsize: 0.8em;
 // $badge-diameter: 1.5rem;
 // $badge-background: $primary-color;
-// $badge-color: #fff;
-
-// DEPRECATED: these variables will be removed in v1.1.
-// $badge-padding: .1em .61em;
-// $badge-radius: $global-rounded;
-// $badge-font-color: #fff; 
+// $badge-color: #fff; 
 
 // 16. Menu Bar
 // - - - - - - - - - - - - - - -
@@ -471,6 +469,14 @@
 //   in: "ng-enter-stagger",
 //   out: "ng-leave-stagger",
 // );
+// $motion-class-showhide: (
+//   in: "ng-hide-remove",
+//   out: "ng-hide-add",
+// );
+// $motion-class-showhide-active: (
+//   in: "ng-hide-remove-active",
+//   out: "ng-hide-add-active",
+// );
 
 // Set if movement-based transitions should also fade the element in and out
 // $motion-slide-and-fade: false;
@@ -480,6 +486,7 @@
 
 // Default speed for transitions and animations
 // $motion-duration-default: 500ms;
+
 // Slow and fast modifiders
 // $motion-duration-slow: 750ms;
 // $motion-duration-fast: 250ms;
@@ -489,6 +496,7 @@
 
 // Default timing function for transitions and animations
 // $motion-timing-default: ease;
+
 // Built-in and custom easing functions
 // Every item in this map becomes a CSS class
 // $motion-timings: (
@@ -548,6 +556,8 @@
 
 // $panel-background: #fff;
 // $panel-shadow: 3px 0 10px rgba(black, 0.25);
+
+// DEPRECATED: these variables will be removed in a future version.
 // $panel-animation-speed: 0.25s; 
 
 // 22. Popup
